@@ -1,0 +1,45 @@
+/* import React from "react";
+import "./contact_card.css";
+
+function ContactCard({ contact}) {   
+    return (
+        <div className="contact-card">
+            <div className="img_container">
+                <img src={contact.photo || "https://via.placeholder.com/150"} alt={`${contact.firstName} ${contact.name}`} />
+            </div>
+            <div className="info_container">
+            <h2>{contact.firstName} {contact.name}</h2>
+            <p>Email: {contact.email}</p>
+            <p>Téléphone: {contact.phone}</p>
+            </div>
+        </div>
+    );
+}
+export default ContactCard; */
+.contact-card{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+.img_container img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.info_container h2{
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+.info_container p{
+    margin: 5px 0 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
