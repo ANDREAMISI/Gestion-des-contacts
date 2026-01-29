@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 
-function Header() {
+function Header({ search, setSearch }) {
   return (
     <header className="header">
       <div className="logo">
@@ -14,6 +14,7 @@ function Header() {
           <li><a href="#about">À propos</a></li>
         </ul>
       </nav>
+      <input type="text" placeholder="Rechercher un contact..." value={search} onChange={(e) => setSearch(e.target.value)}/>
     </header>
   );
 }
